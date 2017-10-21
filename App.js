@@ -26,7 +26,7 @@ export default class App extends Component {
 
   renderRow = (data) => {
     return (
-      <Text>
+      <Text style={ styles.listItems }>
       { data.text }
       </Text>
     )
@@ -52,6 +52,12 @@ const styles = StyleSheet.create({
   },
 
   list: {
-    backgroundColor: 'white'
+    backgroundColor: 'white',
+    padding: 15,
+  },
+
+  listItems: {
+    color: 'steelblue',
+    marginBottom: 15,
   },
 });
