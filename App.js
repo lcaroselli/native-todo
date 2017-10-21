@@ -3,6 +3,7 @@ import { ListView, StyleSheet, Text, View } from 'react-native';
 
 import Title from './components/Title/Title';
 import Footer from './components/Footer/Footer';
+import Input from './components/Input/Input';
 
 const rowData = [
   {id: 0, text: 'Walk Dog'},
@@ -35,6 +36,7 @@ export default class App extends Component {
     return (
       <View style={ styles.container }>
         <Title></Title>
+        <Input></Input>
         <ListView
           style={ styles.list }
           dataSource={ this.state.listData }
