@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { TextInput, StyleSheet } from 'react-native';
+import { Keyboard, TextInput, StyleSheet } from 'react-native';
 
 export default class Input extends Component {
   constructor(){
     super()
     this.state = {
-      text: 'Enter a List Item'
+      text: ''
     }
   }
 
@@ -15,6 +15,7 @@ export default class Input extends Component {
       onChangeText={(text) => this.setState({ text })}
       style={ styles.listInput }
       value={ this.state.text }
+      placeholder='Enter a List Item'
       />
     )
   }

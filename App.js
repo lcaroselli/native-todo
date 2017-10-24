@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { ListView, StyleSheet, Text, View } from 'react-native';
-
 import Title from './components/Title/Title';
 import Footer from './components/Footer/Footer';
 import Input from './components/Input/Input';
@@ -17,7 +16,7 @@ const rowHasChanged = (row1, row2) => row1.id !== row2.id
 const dataSource = new ListView.DataSource({ rowHasChanged })
 
 
-export default class App extends Component {
+class App extends Component {
   constructor() {
     super()
     this.state = {
@@ -46,6 +45,8 @@ export default class App extends Component {
     );
   }
 }
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
